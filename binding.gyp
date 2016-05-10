@@ -1,11 +1,4 @@
 {
-    'conditions': [
-        ['OS=="win"', {
-            'variables': {
-                'THIRD_PATH%': 'C:/projects/node-pngquant-native/gyp/third-party'
-            }
-        }]
-    ],
     'targets': [{
         'target_name': 'addon',
         'cflags': [
