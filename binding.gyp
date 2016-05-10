@@ -1,12 +1,4 @@
 {
-    'targets': [{
-        'target_name': 'addon',
-        'cflags': [
-            '-DNO_ALONE',
-            '-DDEBUG',
-            '-fno-inline',
-            '-O0',
-            '-fstrict-aliasing', {
     'conditions': [
         ['OS=="win"', {
             'variables': {
