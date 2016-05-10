@@ -10,7 +10,6 @@ platform:
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   # install modules
-  - git submodule update --init --recursive
   - npm install -g node-gyp
   - node-gyp rebuild
 
