@@ -125,7 +125,7 @@ namespace Compress {
     // invoke pngquant compress buffer
     char c_args[ARGS_SIZE];
     memset(c_args, '\0', ARGS_SIZE);
-    strcpy(c_args, "-f pngqaunt ");
+    strcpy(c_args, "pngqaunt ");
     strcat(c_args, obj->_args);
 
 
@@ -141,7 +141,7 @@ namespace Compress {
     //reset
     memset(out, '\0', sizeof(struct rwpng_data));
 
-    int ret = pngquant(in, out, argc, argv);
+    int ret = pngquant_exec(in, out, argc, argv);
 
     if (ret != 0) {
       out->png_data = in->png_data;
